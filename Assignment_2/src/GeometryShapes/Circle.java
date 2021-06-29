@@ -7,10 +7,6 @@ public class Circle implements Calculator {
 	private double radius;
 
 	public double getRadius() {
-		Scanner s = new Scanner(System.in);
-		System.out.println("Enter Radius of Cicle");
-        String r = s.nextLine();
-        double radius = Double.parseDouble(r);
 		return radius;
 	}
 
@@ -18,29 +14,30 @@ public class Circle implements Calculator {
 		this.radius = radius;
 	}
 	
-	public double perimeter() {
+	public void perimeter() {
 		try {
-		double peri = 2*3.14*(this.radius);
-		System.out.println("Perimeter of Circle is: "+peri);
-		return 0;
+			double peri = 2*3.14*(this.radius);
+			System.out.println("Perimeter of Circle is: "+peri);
 		}catch(ArithmeticException e) {
 			e.printStackTrace();
-			return 0;
-		  }
-	}
+		}
+	 }
 
 	@Override
-	public double area() {
+	public void area() {
+		try {
 		double area = 3.14*(this.radius*this.radius);
 		System.out.println("Area of Circle is: "+area);
-		return 0;
+		}catch(ArithmeticException e) {
+			e.printStackTrace();
+		}
+		
 	}
 
 
 	@Override
-	public double volume() {
+	public void volume() {
 		// TODO Auto-generated method stub
-		return 0;
 	}
 
 

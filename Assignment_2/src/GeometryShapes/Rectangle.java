@@ -9,10 +9,6 @@ public class Rectangle implements Calculator {
 	
 
 	public double getLength() {
-		Scanner s = new Scanner(System.in);
-		System.out.println("Enter length of Rectangle");
-        String l = s.nextLine();
-        double length = Double.parseDouble(l);
 		return length;
 	}
 
@@ -21,11 +17,7 @@ public class Rectangle implements Calculator {
 	}
 
 	public double getBreadth() {
-		Scanner s = new Scanner(System.in);
-		System.out.println("Enter breadth of Rectangle");
-        String b = s.nextLine();
-        double breadth = Double.parseDouble(b);
-		return length;
+		return breadth;
 	}
 
 	public void setBreadth(double breadth) {
@@ -33,23 +25,21 @@ public class Rectangle implements Calculator {
 	}
 
 	@Override
-	public double perimeter() {
+	public void perimeter() {
 		double perimeter = 2*(length+breadth) ;
 		System.out.println("Perimeter of Rectangle is: "+perimeter);
-		return 0;
 	}
 
 	@Override
-	public double area() {
+	public void area() {
 		double area = (length*breadth);
 		System.out.println("Area of Rectangle is:"+area);
-		return 0;
 	}
 
 	@Override
-	public double volume() {
+	public void volume() {
 		// TODO Auto-generated method stub
-		return 0;
+	
 	}
 
 }

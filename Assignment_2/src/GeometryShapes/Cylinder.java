@@ -10,10 +10,6 @@ public class Cylinder implements Calculator {
 	
 
 	public double getRadius() {
-		Scanner s = new Scanner(System.in);
-		System.out.println("Enter Radius of Cylinder");
-		String r = s.nextLine();
-		double radius = Double.parseDouble(r);
 		return radius;
 	}
 
@@ -22,10 +18,6 @@ public class Cylinder implements Calculator {
 	}
 
 	public double getHeight() {
-		Scanner s = new Scanner(System.in);
-		System.out.println("Enter Height of Cylinder");
-                String h = s.nextLine();
-                double height = Double.parseDouble(h);
 		return height;
 	}
 
@@ -34,23 +26,20 @@ public class Cylinder implements Calculator {
 	}
 
 	@Override
-	public double perimeter() {
+	public void perimeter() {
 		// TODO Auto-generated method stub
-		return 0;
 	}
 
 	@Override
-	public double area() {
+	public void area() {
 		double area = (2*3.14*(radius*radius))+(2*3.14*radius*height);
 		System.out.println("Area of Cylinder is: "+area);
-		return 0;
 	}
 
 	@Override
-	public double volume() {
+	public void volume() {
 		double volume = 3.14*(radius*radius)*height;
 		System.out.println("Volume of Cylinder is: "+volume);
-		return 0;
 	}
 
 
