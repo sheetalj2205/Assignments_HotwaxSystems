@@ -18,8 +18,9 @@ public class MainClass {
 	        System.out.println("4. Square");
 	        System.out.println("5. Sphere");
 	        System.out.println("6. Cylinder");
-	        System.out.println("Enter the number of your choice!\n");
-	        int choice = s.nextInt();
+	        System.out.println("Enter the number of your choice!");
+	        String userInput = s.nextLine();
+	        int choice = Integer.parseInt(userInput);
 	        
 	        
 	        //based on the choice find area, perimeter and volume of corresponding shape
