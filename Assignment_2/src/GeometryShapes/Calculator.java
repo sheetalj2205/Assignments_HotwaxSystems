@@ -2,9 +2,9 @@ package GeometryShapes;
 
 public interface Calculator {
 	
-	void perimeter();
-	void area();
-	void volume();
+	double perimeter();
+	double area();
+	double volume();
 
 
 }

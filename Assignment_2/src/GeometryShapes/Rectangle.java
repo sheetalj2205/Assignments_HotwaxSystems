@@ -7,6 +7,14 @@ public class Rectangle implements Calculator {
 	private double length;
 	private double breadth;
 	
+	
+	
+
+	public Rectangle(double length, double breadth) {
+		super();
+		this.length = length;
+		this.breadth = breadth;
+	}
 
 	public double getLength() {
 		return length;
@@ -25,20 +33,21 @@ public class Rectangle implements Calculator {
 	}
 
 	@Override
-	public void perimeter() {
-		double perimeter = 2*(length+breadth) ;
-		System.out.println("Perimeter of Rectangle is: "+perimeter);
+	public double perimeter() {
+		double perimeter = 2*(length+breadth);
+		return perimeter;
 	}
 
 	@Override
-	public void area() {
+	public double area() {
 		double area = (length*breadth);
-		System.out.println("Area of Rectangle is:"+area);
+		return area;
 	}
 
 	@Override
-	public void volume() {
+	public double volume() {
 		// TODO Auto-generated method stub
+		return 0.0;
 	
 	}
 

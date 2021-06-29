@@ -6,6 +6,12 @@ public class Square implements Calculator {
 
     private double side;
 	
+    
+
+	public Square(double side) {
+		super();
+		this.side = side;
+	}
 
 	public double getSide() {
 		return side;
@@ -16,20 +22,21 @@ public class Square implements Calculator {
 	}
 
 	@Override
-	public void perimeter() {
+	public double perimeter() {
 		double perimeter = 4*side;
-		System.out.println("Perimeter of Sqaure is: "+perimeter);
+		return perimeter;
 	}
 
 	@Override
-	public void area() {
+	public double area() {
 		double area = (side*side);
-		System.out.println("Area of Square is: "+area);
+		return area;
 	}
 
 	@Override
-	public void volume() {
+	public double volume() {
 		// TODO Auto-generated method stub
+		return 0.0;
 	}
 
 

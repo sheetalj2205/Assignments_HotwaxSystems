@@ -8,6 +8,15 @@ public class Traingle implements Calculator {
 	private double base;
 	private double side;
 	
+	
+	
+	public Traingle(double height, double base, double side) {
+		super();
+		this.height = height;
+		this.base = base;
+		this.side = side;
+	}
+
 	public double getHeight() {
 		return height;
 	}
@@ -33,23 +42,25 @@ public class Traingle implements Calculator {
 	}
 
 	@Override
-	public void perimeter() {
+	public double perimeter() {
 		try {
 			double peri = (height+base+side);
-			System.out.println("Perimeter of Triangle is: "+peri);
+			return peri;
 		}catch(ArithmeticException e) {
 			e.printStackTrace();
+			return 0.0;
 		}
 	}
 
 	@Override
-	public void area() {
+	public double area() {
 		double area = (1/2)*(base*height);
-		System.out.println("Area of Triangle is: "+area);
+		return area;
 	}
 
 	@Override
-	public void volume() {
+	public double volume() {
 		// TODO Auto-generated method stub
+		return 0.0;
 	}
 }

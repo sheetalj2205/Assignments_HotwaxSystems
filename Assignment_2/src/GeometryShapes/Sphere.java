@@ -5,7 +5,14 @@ import java.util.Scanner;
 public class Sphere implements Calculator {
 
     private double radius;
+    
+    
 	
+	public Sphere(double radius) {
+		super();
+		this.radius = radius;
+	}
+
 	public double getRadius() {
 		return radius;
 	}
@@ -15,20 +22,21 @@ public class Sphere implements Calculator {
 	}
 
 	@Override
-	public void perimeter() {
+	public double perimeter() {
 		// TODO Auto-generated method stub
+		return 0.0;
 	}
 
 	@Override
-	public void area() {
+	public double area() {
 		double area = 4*3.14*(radius*radius);
-		System.out.println("Area of Sphere is: "+area);
+		return area;
 	}
 
 	@Override
-	public void volume() {
+	public double volume() {
 		double volume = (4/3)*3.14*(radius*radius*radius);
-		System.out.println("Volume of Sphere is: "+volume);
+		return volume;
 	}
 
 }
