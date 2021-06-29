@@ -10,11 +10,11 @@ public class Cylinder implements Calculator {
 	
 
 	public double getRadius() {
-			Scanner s = new Scanner(System.in);
-			System.out.println("Enter Radius of Cylinder");
-		    String r = s.nextLine();
-		    double radius = Double.parseDouble(r);
-			return radius;
+		Scanner s = new Scanner(System.in);
+		System.out.println("Enter Radius of Cylinder");
+		String r = s.nextLine();
+		double radius = Double.parseDouble(r);
+		return radius;
 	}
 
 	public void setRadius(double radius) {
@@ -24,8 +24,8 @@ public class Cylinder implements Calculator {
 	public double getHeight() {
 		Scanner s = new Scanner(System.in);
 		System.out.println("Enter Height of Cylinder");
-        String h = s.nextLine();
-        double height = Double.parseDouble(h);
+                String h = s.nextLine();
+                double height = Double.parseDouble(h);
 		return height;
 	}
 
