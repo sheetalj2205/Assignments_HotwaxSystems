@@ -2,13 +2,10 @@ package GeometryShapes;
 
 import java.util.Scanner;
 
-public class Rectangle implements Calculator {
+public class Rectangle implements Two_DimensionalShapes {
 
 	private double length;
 	private double breadth;
-	
-	
-	
 
 	public Rectangle(double length, double breadth) {
 		super();
@@ -34,21 +31,14 @@ public class Rectangle implements Calculator {
 
 	@Override
 	public double perimeter() {
-		double perimeter = 2*(length+breadth);
+		double perimeter = 2 * (length + breadth);
 		return perimeter;
 	}
 
 	@Override
 	public double area() {
-		double area = (length*breadth);
+		double area = (length * breadth);
 		return area;
-	}
-
-	@Override
-	public double volume() {
-		// TODO Auto-generated method stub
-		return 0.0;
-	
 	}
 
 }

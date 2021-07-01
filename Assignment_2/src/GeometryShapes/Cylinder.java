@@ -2,12 +2,10 @@ package GeometryShapes;
 
 import java.util.Scanner;
 
-public class Cylinder implements Calculator {
+public class Cylinder implements Three_DimensionalShapes {
 
 	private double radius;
 	private double height;
-	
-	
 
 	public Cylinder(double radius, double height) {
 		super();
@@ -32,22 +30,15 @@ public class Cylinder implements Calculator {
 	}
 
 	@Override
-	public double perimeter() {
-		// TODO Auto-generated method stub
-		return 0.0;
-	}
-
-	@Override
-	public double area() {
-		double area = (2*3.14*(radius*radius))+(2*3.14*radius*height);
+	public double surfaceArea() {
+		double area = (2 * 3.14 * (radius * radius)) + (2 * 3.14 * radius * height);
 		return area;
 	}
 
 	@Override
 	public double volume() {
-		double volume = 3.14*(radius*radius)*height;
+		double volume = 3.14 * (radius * radius) * height;
 		return volume;
 	}
-
 
 }

@@ -2,12 +2,10 @@ package GeometryShapes;
 
 import java.util.Scanner;
 
-public class Sphere implements Calculator {
+public class Sphere implements Three_DimensionalShapes {
 
-    private double radius;
-    
-    
-	
+	private double radius;
+
 	public Sphere(double radius) {
 		super();
 		this.radius = radius;
@@ -22,20 +20,14 @@ public class Sphere implements Calculator {
 	}
 
 	@Override
-	public double perimeter() {
-		// TODO Auto-generated method stub
-		return 0.0;
-	}
-
-	@Override
-	public double area() {
-		double area = 4*3.14*(radius*radius);
+	public double surfaceArea() {
+		double area = 4 * 3.14 * (radius * radius);
 		return area;
 	}
 
 	@Override
 	public double volume() {
-		double volume = (4/3)*3.14*(radius*radius*radius);
+		double volume = (4 / 3) * 3.14 * (radius * radius * radius);
 		return volume;
 	}
 

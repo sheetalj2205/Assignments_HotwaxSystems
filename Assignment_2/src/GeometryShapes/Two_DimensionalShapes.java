@@ -1,10 +1,8 @@
 package GeometryShapes;
 
-public interface Calculator {
+public interface Two_DimensionalShapes {
 	
 	double perimeter();
 	double area();
-	double volume();
-
 
 }

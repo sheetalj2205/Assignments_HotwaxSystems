@@ -2,14 +2,12 @@ package GeometryShapes;
 
 import java.util.Scanner;
 
-public class Traingle implements Calculator {
+public class Traingle implements Two_DimensionalShapes {
 
 	private double height;
 	private double base;
 	private double side;
-	
-	
-	
+
 	public Traingle(double height, double base, double side) {
 		super();
 		this.height = height;
@@ -44,9 +42,9 @@ public class Traingle implements Calculator {
 	@Override
 	public double perimeter() {
 		try {
-			double peri = (height+base+side);
+			double peri = (height + base + side);
 			return peri;
-		}catch(ArithmeticException e) {
+		} catch (ArithmeticException e) {
 			e.printStackTrace();
 			return 0.0;
 		}
@@ -54,13 +52,7 @@ public class Traingle implements Calculator {
 
 	@Override
 	public double area() {
-		double area = (1/2)*(base*height);
+		double area = (1 / 2) * (base * height);
 		return area;
-	}
-
-	@Override
-	public double volume() {
-		// TODO Auto-generated method stub
-		return 0.0;
 	}
 }
