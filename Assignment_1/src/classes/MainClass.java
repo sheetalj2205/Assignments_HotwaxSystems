@@ -15,6 +15,7 @@ public class MainClass {
 		for (String fileName : list) {
 			System.out.println(fileName);
 			count.countNoOfOccurences(fileName);
+			System.out.println("--------------------");
 
 		}
 

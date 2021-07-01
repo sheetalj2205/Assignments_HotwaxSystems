@@ -34,8 +34,11 @@ public class CountNumberOfOccurences {
 				line = br.readLine();
 
 			}
-			
-			System.out.println(map);
+			for (Map.Entry<String, Integer> entry : map.entrySet()) {
+
+				System.out.println(entry.getKey() + " - " + entry.getValue());
+
+			}
 			br.close();
 
 		} catch (
