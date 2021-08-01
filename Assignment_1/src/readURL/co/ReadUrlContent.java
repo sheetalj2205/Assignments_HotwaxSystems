@@ -1,4 +1,4 @@
-package classes;
+package readURL.co;
 
 import java.net.*;
 import java.util.ArrayList;

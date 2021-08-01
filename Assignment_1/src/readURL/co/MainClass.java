@@ -1,4 +1,4 @@
-package classes;
+package readURL.co;
 
 public class MainClass {
 
