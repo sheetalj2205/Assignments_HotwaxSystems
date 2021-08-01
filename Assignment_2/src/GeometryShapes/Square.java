@@ -1,13 +1,10 @@
 package GeometryShapes;
 
-import java.util.Scanner;
-
-public class Square implements Two_DimensionalShapes {
+public class Square implements TwoDimensionalShapes {
 
 	private double side;
 
 	public Square(double side) {
-		super();
 		this.side = side;
 	}
 

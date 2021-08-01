@@ -1,6 +1,6 @@
 package GeometryShapes;
 
-public interface Three_DimensionalShapes {
+interface ThreeDimensionalShapes {
 	
 	double surfaceArea();
 	double volume();

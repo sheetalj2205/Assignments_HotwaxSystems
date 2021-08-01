@@ -1,14 +1,11 @@
 package GeometryShapes;
 
-import java.util.Scanner;
-
-public class Rectangle implements Two_DimensionalShapes {
+public class Rectangle implements TwoDimensionalShapes {
 
 	private double length;
 	private double breadth;
 
 	public Rectangle(double length, double breadth) {
-		super();
 		this.length = length;
 		this.breadth = breadth;
 	}

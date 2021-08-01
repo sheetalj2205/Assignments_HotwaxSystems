@@ -1,13 +1,10 @@
 package GeometryShapes;
 
-import java.util.Scanner;
-
-public class Sphere implements Three_DimensionalShapes {
+public class Sphere implements ThreeDimensionalShapes {
 
 	private double radius;
 
 	public Sphere(double radius) {
-		super();
 		this.radius = radius;
 	}
 

@@ -1,13 +1,10 @@
 package GeometryShapes;
 
-import java.util.Scanner;
-
-public class Circle implements Two_DimensionalShapes {
+public class Circle implements TwoDimensionalShapes {
 
 	private double radius;
 
 	public Circle(double radius) {
-		super();
 		this.radius = radius;
 	}
 

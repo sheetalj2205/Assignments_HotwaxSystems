@@ -1,14 +1,11 @@
 package GeometryShapes;
 
-import java.util.Scanner;
-
-public class Cylinder implements Three_DimensionalShapes {
+public class Cylinder implements ThreeDimensionalShapes {
 
 	private double radius;
 	private double height;
 
 	public Cylinder(double radius, double height) {
-		super();
 		this.radius = radius;
 		this.height = height;
 	}

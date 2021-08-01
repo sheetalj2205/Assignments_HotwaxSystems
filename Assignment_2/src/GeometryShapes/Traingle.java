@@ -1,15 +1,12 @@
 package GeometryShapes;
 
-import java.util.Scanner;
-
-public class Traingle implements Two_DimensionalShapes {
+public class Traingle implements TwoDimensionalShapes {
 
 	private double height;
 	private double base;
 	private double side;
 
 	public Traingle(double height, double base, double side) {
-		super();
 		this.height = height;
 		this.base = base;
 		this.side = side;

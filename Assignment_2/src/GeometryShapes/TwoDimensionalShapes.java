@@ -1,6 +1,6 @@
 package GeometryShapes;
 
-public interface Two_DimensionalShapes {
+interface TwoDimensionalShapes {
 	
 	double perimeter();
 	double area();
