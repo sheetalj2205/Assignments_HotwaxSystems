@@ -782,6 +782,46 @@ WHERE CITY="London" AND COMM > 10;
 Peel	London	12
 Motika	London	11
 Fran	London	25
+
+81) Write a query that selects the first customer in alphabetical order whose name begins with ‘G’.
+SELECT * FROM customers WHERE CNAME LIKE "G%" LIMIT 1
+
+2002	Giovanni	Rome	200	1003
+				
+
+82) Write a query that counts the number of different non NULL city values in the customers table.
+SELECT COUNT(CITY) FROM customers WHERE CITY IS NOT NULL
+
+7
+
+83) Find the average amount from the Orders Table.
+SELECT AVG(AMT) FROM orders;
+
+2665.840000
+
+84) Find all customers who are not located in SanJose and whose rating is above 200.
+SELECT * FROM customers WHERE CITY!="SanJose" AND RATING>200;
+
+2004	Grass	Berlin	300	1002
+				
+85) Give a simpler way to write this query.SELECT snum, sname, city, comm FROM salespeople WHERE (comm > + 0.12 OR comm < 0.14);
+SELECT * FROM salespeople WHERE COMM BETWEEN 12 AND 14
+
+1001	Peel	London	12
+1002	Serres	SanJose	13
+
+86) Which salespersons attend to customers not in the city they have been assigned to?
+SELECT a.SNUM,a.SNAME,a.CITY,b.CITY AS customerCity
+FROM salespeople a
+JOIN customers b
+ON a.SNUM=b. SNUM
+WHERE a.CITY !=b.CITY
+
+1003	AxelRod	New York	Rome
+1002	Serres	SanJose	        Berlin
+1004	Motika	London	        Rome
+1007	Rifkin	Barcelona	SanJose
+
 	
 			
 
